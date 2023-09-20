@@ -1,0 +1,65 @@
+body {
+  background-color: lightgoldenrodyellow;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  background-color: antiquewhite;
+}
+
+section {
+  padding: 20px;
+}
+
+section h1  {
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+article h3 {
+  text-align: center;
+}
+
+article figure {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+form div {
+  display: flex;
+  gap: 40px;
+  margin: 20px;
+}
+
+input {
+  width: 200px;
+}
+
+footer {
+  background-color: aquamarine;
+  padding: 15px;
+  text-align: center;
+}
