@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Review Form</title>
+  </head>
+  <body>
+    <h1>Tell us what you think!</h1>
+    <!-- Assign an action and a method to the form, the action defines where the data will be submitted -->
+    <form action="http://example.com/" method="post">
+      <!-- Create a label that matches the attribute for with input's id attribute to link them
+      assigns the type for the input in this case is a text
+      also added placeholder attribute to give the user a hint of the structure to be submitted
+      and provided a regex pattern to match excactly with what the user should input, otherwise will request to change it
+      -->
+      <div>
+        <label for="phone">Enter your phone: </label>
+        <input type="tel" id="phone" pattern="\(\d{3}\) \d{3}-\d{4}" placeholder="(123) 456-7890">
+      </div>
+
+      <!-- Create a label that matches the attribute for with input's id attribute to link them
+      assigns the type for the input in this case is a email so it will enforce to have @ and . in order to be able to submit the form
+      -->
+      <div>
+        <label for="email">Enter your email address: </label>
+        <input type="email" id="email" placeholder="example@gmail.com">
+      </div>
+
+      <!-- Create a label that matches the attribute for with input's id attribute to link them
+      assigns the type for the input in this case is a number
+      also added min which defines the minimum value, max which defines the maximum value
+      and step which defines the increment/decrement between selection
+      -->
+      <div>
+        <label for="number">Enter your age: </label>
+        <input type="number" id="number" step="1" min="10" max="99">
+      </div>
+      <!-- Create a label that matches the attribute for with input's id attribute to link them
+      assigns the type for the input in this case is a range
+      also added min which defines the minimum value, max which defines the maximum value
+      -->
+      <div>
+        <label for="range">Select how satified you are </label>
+        <input type="range" id="range" min="0" max="10">
+      </div>
+
+    <!-- Create an input type submit which is in charge of submitting the form when all the fields are ready to be send -->
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Lab</title>
+</head>
+<body>
+  <!-- Assign an action and a method to the form, the action defines where the data will be submitted -->
+  <form action="http://example.com/submit_form" method="post">
+    <!-- Create a label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a text
+    also adds a placeholder to give a hint to the user and autofocus the user when page loads
+    -->
+    <div>
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="example2023" autofocus>
+    </div>
+    <!-- Create a label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a password so it will be hidden
+    also adds a placeholder to give a hint to the user
+    -->
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Example123*">
+    </div>
+    <!-- Create a fieldset to let user know that the following options are contained inside the rectangle 
+    label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a radio so only one option at a time
+    also adds a value which represents the data that will be receive
+    -->
+    <fieldset>
+      <legend>Gender</legend>
+        <input type="radio" id="men" name="gender" value="M" />
+        <label for="men">M</label>
+        <input type="radio" id="female" name="gender" value="F" />
+        <label for="female">F</label>
+    </fieldset>
+    <!-- Create a fieldset to let user know that the following options are contained inside the rectangle 
+    label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a checkbox so user can select multiple options
+    -->
+    <fieldset>
+      <legend>Programming Languages</legend>
+        <input type="checkbox" id="html" name="html" />
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="css" />
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="js" />
+        <label for="js">JavaScript</label>
+        <input type="checkbox" id="php" name="php" />
+        <label for="php">PHP</label>
+        <input type="checkbox" id="sql" name="sql" />
+        <label for="sql">SQL</label>
+    </fieldset>
+    <!-- Create a label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a file so the clint can select a file from his devicce to be uploaded
+    -->
+    <div>
+      <label for="upload">Upload a File: </label>
+      <input type="file" id="upload">
+    </div>
+    <!-- Create a label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a date a calendar will be display to user to select day/month/year
+    -->
+    <div>
+      <label for="date">Select your date of birth </label>
+      <input type="date" id="date">
+    </div>
+    <!-- Create a label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a email so it will enforce to have @ and . in order to be able to submit the form
+    -->
+    <div>
+      <label for="email">Enter your email address </label>
+      <input type="email" id="email" placeholder="example@gmail.com">
+    </div>
+    <!-- Create a label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a ur so it will enforce to have http:// and . in order to be able to submit the form
+    -->
+    <div>
+      <label for="url">Enter your website </label>
+      <input type="url" id="url" placeholder="https://example.com">
+    </div>
+    <!-- Create a label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a number
+    also added min which defines the minimum value, max which defines the maximum value
+    and step which defines the increment/decrement between selection
+    -->
+    <div>
+      <label for="number">Enter your age </label>
+      <input type="number" id="number" step="1" min="18" max="99">
+    </div>
+    <!-- Create a label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a range
+    also added min which defines the minimum value, max which defines the maximum value
+    -->
+    <div>
+      <label for="range">Select how satified you are </label>
+      <input type="range" id="range" min="0" max="10">
+    </div>
+    <!-- Create a label that matches the attribute for with input's id attribute to link them
+    assigns the type for the input in this case is a text
+    also added placeholder attribute to give the user a hint of the structure to be submitted
+    and provided a regex pattern to match excactly with what the user should input, otherwise will request to change it
+    -->
+    <div>
+      <label for="phone">Select how satified you are </label>
+      <input type="text" id="phone" pattern="\(\d{3}\) \d{3}-\d{4}" placeholder="(123) 456-7890">
+    </div>
+  <!-- Create an input type submit which is in charge of submitting the form when all the fields are ready to be send
+    -->
+    <input type="submit" id="submit">
+  </form>
+</body>
+</html>

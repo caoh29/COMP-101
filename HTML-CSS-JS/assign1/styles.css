@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  margin: 20px;
+  font-size: x-large;
+  font-weight: 900;
+  color: rgb(35, 74, 62);
+}
+
+p {
+  margin: 20px 40px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+#p-subtitle {
+  text-align: center;
+  margin: 20px auto;
+  color: rgb(35, 74, 62);
+}
+
+img {
+  align-self: center;
+  width: 400px;
+  height: 250px;
+}
+
+form {
+  margin: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+input[type=number], select, textarea, input[type=submit], input[type=reset] {
+  border: solid 2px salmon;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input[type=number] {
+  width: 40px;
+}
+
+select {
+  width: 80px;
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
+  align-self: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+input[type=submit], input[type=reset] {
+  width: 100px;
+  margin: 15px 50px;
+  background-color: salmon;
+  color: white;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: rgb(25, 53, 44);
+  border-color: rgb(25, 53, 44);
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(25, 53, 44);
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Order Pizza Form</title>
+  </head>
+  <body>
+    <!-- Creates a header as the title of the page -->
+    <header>Order your crusty and delicious Pizza here!</header>
+    <!-- Defines the main content block of the page -->
+    <main>
+      <!-- Creates a paragraph with a break line between paragraph content and subtitle -->
+      <p id="description">
+        Our pizzas are a culinary delight that takes your taste buds on an unforgettable journey. 
+        With every bite, you'll experience a burst of flavor that's second to none. 
+        Our handcrafted crust is perfectly crisp on the outside 
+        and delightfully soft on the inside, providing the ideal canvas for our mouthwatering toppings. 
+        Whether you savor the classic simplicity of a Margherita or the bold complexity of a Meat Lover's, 
+        each slice is a symphony of taste and texture. 
+        Indulge in our pizzas, and you'll discover why they're renowned for their irresistibly delicious nature.
+        <br/>
+        <!-- Creates a subtitle in bold letters using the strong tag -->
+        <span id="p-subtitle"><strong>Check it out!</strong></span>
+        <!-- Adds and image with and alt attribute located in assets folder -->
+        <img src="./assets/pizza.png" alt="pepperoni-pizza">
+      </p>
+      <!-- Assign an action and a method to the form, the action defines where the data will be submitted -->
+      <form action="./review.html" method="post">
+        <!-- Creates a label that matches the attribute for with input's id attribute to link them
+        assigns the type for the input in this case is a number
+        also sets its default value, step, minimum and maximum possible values
+        -->
+        <div>
+          <label for="quantity">Number of pizzas </label>
+          <input type="number" id="quantity" value="1" step="1" min="1" max="99">
+        </div>
+        <!-- Creates a label that matches the attribute for with input's id attribute to link them
+        assigns the type for the input in this case is a number
+        also sets its step, minimum and maximum possible values
+        -->
+        <div>
+          <label for="size">Size (number of slices) </label>
+          <input type="number" id="size" step="1" min="1" max="99">
+        </div>
+
+        <!-- Creates a label that matches the attribute for with select's id attribute to link them
+        creates 2 options for the slect drop down menu with its corresponding values
+        -->
+        <div>
+          <label for="shape">Shape </label>
+          <select name="shape" id="shape">
+            <option value="square">Square</option>
+            <option value="round">Round</option>
+          </select>
+        </div>
+
+        <!-- Create a fieldset to let user know that the following options are contained inside the rectangle 
+        label that matches the attribute for with input's id attribute to link them
+        assigns the type for the input in this case is a checkbox so user can select multiple options
+        -->
+        <fieldset>
+          <legend>Toppings</legend>
+            <input type="checkbox" id="cheese" name="cheese" />
+            <label for="cheese">Cheese</label>
+            <input type="checkbox" id="bacon" name="bacon" />
+            <label for="bacon">Bacon</label>
+            <input type="checkbox" id="anchovies" name="anchovies" />
+            <label for="anchovies">Anchovies</label>
+            <input type="checkbox" id="peppers" name="peppers" />
+            <label for="peppers">Peppers</label>
+            <input type="checkbox" id="beef" name="beef" />
+            <label for="beef">Beef</label>
+            <input type="checkbox" id="black-olives" name="black-olives" />
+            <label for="black-olives">Black Olives</label>
+            <input type="checkbox" id="green-olives" name="green-olives" />
+            <label for="green-olives">Green Olives</label>
+            <input type="checkbox" id="grilled-chicken" name="grilled-chicken" />
+            <label for="grilled-chicken">Grilled chicken</label>
+            <input type="checkbox" id="jalapenos" name="jalapenos" />
+            <label for="jalapenos">Jalapenos</label>
+            <input type="checkbox" id="meat-balls" name="meat-balls" />
+            <label for="meat-balls">Meat balls</label>
+            <input type="checkbox" id="mushrooms" name="mushrooms" />
+            <label for="mushrooms">Mushrooms</label>
+            <input type="checkbox" id="onions" name="onions" />
+            <label for="onions">Onions</label>
+            <input type="checkbox" id="pepperoni" name="pepperoni" />
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="pineapple" name="pineapple" />
+            <label for="pineapple">Pineapple</label>
+            <input type="checkbox" id="tomatoes" name="tomatoes" />
+            <label for="tomatoes">Tomatoes</label>
+            <input type="checkbox" id="salami" name="salami" />
+            <label for="salami">Salami</label>
+            <input type="checkbox" id="sausage" name="sausage" />
+            <label for="sausage">Sausage</label>
+        </fieldset>
+
+        <!-- Creates a fieldset to let user know that the following options are contained inside the rectangle 
+        label that matches the attribute for with input's id attribute to link them
+        assigns the type for the input in this case is a checkbox so user can select multiple options
+        -->
+        <fieldset>
+          <legend>Sauce Type</legend>
+            <input type="checkbox" id="alfredo" name="alfredo" />
+            <label for="alfredo">Alfredo</label>
+            <input type="checkbox" id="bbq" name="bbq" />
+            <label for="bbq">BBQ</label>
+            <input type="checkbox" id="buffalo" name="buffalo" />
+            <label for="buffalo">Buffalo</label>
+            <input type="checkbox" id="butter-chicken" name="butter-chicken" />
+            <label for="butter-chicken">Butter Chicken</label>
+            <input type="checkbox" id="donair" name="donair" />
+            <label for="donair">Donair</label>
+            <input type="checkbox" id="ranch" name="ranch" />
+            <label for="ranch">Ranch</label>
+            <input type="checkbox" id="spinach" name="spinach" />
+            <label for="spinach">Spinach</label>
+            <input type="checkbox" id="original" name="original" />
+            <label for="original">Original</label>
+        </fieldset>
+
+        <!-- Creates a fieldset to let user know that the following options are contained inside the rectangle 
+        label that matches the attribute for with input's id attribute to link them
+        assigns the type for the input in this case is a radio so user can ONLY ONE option of the possible ones
+        -->
+        <fieldset>
+          <legend>Sauce Portion</legend>
+        
+          <div>
+            <input type="radio" id="extra" name="sauce-portion" value="extra" />
+            <label for="extra">Extra</label>
+          </div>
+        
+          <div>
+            <input type="radio" id="light" name="sauce-portion" value="light" />
+            <label for="light">Light</label>
+          </div>
+
+          <div>
+            <input type="radio" id="regular" name="sauce-portion" value="regular" />
+            <label for="regular">Regular</label>
+          </div>
+        
+          <div>
+            <input type="radio" id="no-sauce" name="sauce-portion" value="no-sauce" />
+            <label for="no-sauce">No sauce</label>
+          </div>
+        </fieldset>
+
+        <!-- Creates a fieldset to let user know that the following options are contained inside the rectangle 
+        label that matches the attribute for with input's id attribute to link them
+        assigns the type for the input in this case is a radio so user can ONLY ONE option of the possible ones
+        -->
+        <fieldset>
+          <legend>Crust Type</legend>
+        
+          <div>
+            <input type="radio" id="deep-dish" name="crust" value="deep-dish" />
+            <label for="deep-dish">Deep dish</label>
+          </div>
+        
+          <div>
+            <input type="radio" id="thin-crust" name="crust" value="thin-crust" />
+            <label for="thin-crust">Thin crust</label>
+          </div>
+        
+          <div>
+            <input type="radio" id="cheese-crust" name="crust" value="cheese-crust" />
+            <label for="cheese-crust">Cheese Crust</label>
+          </div>
+        </fieldset>
+
+        <!-- Creates a fieldset to let user know that the following options are contained inside the rectangle 
+        label that matches the attribute for with input's id attribute to link them
+        assigns the type for the input in this case is a radio so user can ONLY ONE option of the possible ones
+        -->
+        <fieldset>
+          <legend>Delivery Method</legend>
+        
+          <div>
+            <input type="radio" id="take-out" name="delivery" value="take-out" />
+            <label for="take-out">Take out</label>
+          </div>
+        
+          <div>
+            <input type="radio" id="delivery" name="delivery" value="delivery" />
+            <label for="delivery">Delivery</label>
+          </div>
+        
+          <div>
+            <input type="radio" id="eat-in" name="delivery" value="eat-in" />
+            <label for="eat-in">Eat-in</label>
+          </div>
+        </fieldset>
+
+        <!-- Creates a textare which lets the user modify the size of the rectangle
+        a placeholder attribute is used to give a hint to the user about what type of information should he submit
+        -->
+        <textarea placeholder="Any extra comments, please let us know here"></textarea>
+        <!-- Creates a div container which displays the children elements using its respective configuration details
+        creates 2 input elements one submit and one reset each one which its corresponding functionality as the name suggest
+        -->
+        <div class="buttons-container">
+          <input type="reset" id="reset">
+          <input type="submit" id="submit">
+        </div>
+      </form>
+    <!-- Closes the main tag to let browser know until which point is the main content block -->
+    </main>
+    <!-- Finally a footer is created with the copyright information and the respective closure of the body and html tag-->
+    <footer>Copyrigth© Camilo Ordonez 2023</footer>
+  </body>
+</html>
