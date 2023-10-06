@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Formats</title>
+  </head>
+  <body>
+    <button id="up">Scale Up!</button>
+    <button id="down">Scale Down!</button>
+    <section id="gif">
+      <figure>
+        <img src="./assets/basket.gif" alt="stick fight" class="bordered"/>
+        <figcaption>Stickman playing basketball</figcaption>
+      </figure>
+      <p>
+        GIF base quality is not the best, when you scale the image it lossess more quality
+        and when you hover one the opacity changes but its barelly noticiable
+      </p>
+    </section>
+    <hr/>
+    <section id="jpg">
+      <div class="images-container">
+        <figure>
+          <img src="./assets/doggies.jpg" alt="doggies" />
+          <figcaption>My dogs, Liz and Chloe - ORIGINAL</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/doggies-high.jpg" alt="doggies" />
+          <figcaption>My dogs, Liz and Chloe - HIGH</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/doggies-medium.jpg" alt="doggies" />
+          <figcaption>My dogs, Liz and Chloe - MEDIUM</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/doggies-low.jpg" alt="doggies" />
+          <figcaption>My dogs, Liz and Chloe - LOW</figcaption>
+        </figure>
+      </div>
+      <p>
+        JPG base quality is really good, when you scale the image it lossess more quality
+        but not as much as PNG or GIF, the levels of compression are not that noticiable
+        and when you hover over them you can see the effect 100% sure
+      </p>
+    </section>
+    <hr/>
+    <section id="png">
+      <div class="images-container">
+        <figure>
+          <img src="./assets/flanders.png" alt="flanders" class="bordered" />
+          <figcaption>Evil Flanders - ORIGINAL</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/flanders-8.png8" alt="flanders" class="bordered" />
+          <figcaption>Evil Flanders - 8 BIT</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/flanders-24.png24" alt="flanders" class="bordered" />
+          <figcaption>Evil Flanders - 24 BIT</figcaption>
+        </figure>
+      </div>
+      <p>
+        PNG base quality good, when you scale the image it lossess a lot of quality,
+        the levels of compression are very noticiable
+        and when you hover over them you can see the effect, not as clear as JPEG
+        but more noticiable than GIF
+      </p>
+    </section>
+    <hr/>
+    <section id="svg">
+      <figure>
+        <img src="./assets/bike.svg" alt="bike" />
+        <figcaption>Cross bike</figcaption>
+      </figure>
+      <p>
+        SVG base quality is the best, when you scale the image it remains the same,
+        and when you hover over them you can see the effect similar like a PNG file
+      </p>
+    </section>
+    <script>
+      const images = document.querySelectorAll('img');
+      document.getElementById('up').addEventListener('click', () => {
+        images.forEach((img) => {
+          img.style.width = '500px';
+        });
+      });
+      document.getElementById('down').addEventListener('click', () => {
+        images.forEach((img) => {
+          img.style.width = '250px';
+        });
+      });
+    </script>
+  </body>
+</html>
