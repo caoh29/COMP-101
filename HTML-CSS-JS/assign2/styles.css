@@ -1,0 +1,109 @@
+html {
+  background-image: url("./images/limitless.jpg");   
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+header {
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  color: #2a9d8f;
+}
+
+h2 {
+  margin: 0 auto;
+  padding: 10px;
+  text-shadow: 5px 5px 5px black;
+}
+
+.lastname {
+  font-size: 2.5rem;
+  color: #264653;
+}
+
+.conjunction {
+  font-size: 1.5rem;
+  color: #264653;
+}
+
+main, footer {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  width: 100%;
+  position: fixed;
+  top: 45vh;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 6rem;
+  color: aliceblue;
+  text-shadow: 10px 10px 10px rgb(180, 172, 172);
+}
+
+h3 {
+  margin: 0 auto auto auto;
+  width: 100%;
+  position: fixed;
+  top: 70vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 5px 5px 5px #264653;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  position: fixed;
+  bottom: 35px;
+  width: 70vw;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #2a9d8f;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #e9c46a;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+a:hover {
+  cursor: pointer;
+  color: white;
+}
