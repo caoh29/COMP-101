@@ -84,20 +84,22 @@ class StudentRecord {
       return 'F';
   }
 
-  // Method which prints to the console the number of voews that are present in
-  // student's first name
-  public void getVoewsInFirstName() {
+  // Method which returns the number of voews that are present
+  // in student's first name if it is 5 letters long
+  public int getVoewsInFirstName() {
     // Initialize a counter variable with value 0
     int count = 0;
-    // Iterate through each letter of the first name
-    for (int i = 0; i < this.firstName.length(); i++) {
-      char letter = this.firstName.charAt(i);
-      // If the letter is a vowel, increment the counter variable by 1
-      if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
-        count++;
+    // If student's first name has 5 letters
+    if (this.firstName.length() == 5) {
+      // Iterate through each letter of the first name
+      for (int i = 0; i < this.firstName.length(); i++) {
+        char letter = this.firstName.charAt(i);
+        // If the letter is a vowel, increment the counter variable by 1
+        if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+          count++;
+        }
       }
     }
-    // Print the number of vowels in the first name to the console
-    System.out.println("The number of vowels in the first name is: " + count);
+    return count;
   }
 }
