@@ -1,0 +1,34 @@
+/* Apply styles for header and footer */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Apply styles for articles */
+article {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Implement a grid layout for smaller screens (stack articles vertically) */
+section {
+  display: grid;
+  grid-template-columns: 1fr; /* Each article takes up the full width */
+}
+
+/* Use media queries for larger screens */
+@media (min-width: 600px) {
+  section {
+    grid-template-columns: repeat(2, 1fr); /* Display articles in a 2x2 grid */
+  }
+}
