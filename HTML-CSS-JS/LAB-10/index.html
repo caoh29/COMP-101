@@ -8,23 +8,26 @@
 </head>
 <body>
   <nav>
-    <a id="home" href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="index.html">Home</a>
+      <div class="dropdown-content">
+        <a href="https://aws.amazon.com/" title="Amazon Web Services" target="_blank">AWS</a>
+        <a href="https://azure.microsoft.com/en-us/" title="Microsoft Azure" target="_blank">Azure</a>
+        <a href="https://cloud.google.com/" title="Google CLoud">GCP</a>
+        <a href="https://cs50.harvard.edu/x/2023/" title="Harvard CS 50">cs50</a>
+        <a href="https://www.wa4e.com/" title="Web Apps 4 Everybody">WA4E</a>
+
+        <a href="#nature">Nature</a>
+        <a href="#food">Food</a>
+        <a href="#sports">Sports</a>
+      </div>
+    </div>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
 
   <main>
-    <a href="https://example1.com" title="Description for Link 1" target="_blank">Link 1</a>
-    <a href="https://example2.com" title="Description for Link 2" target="_blank">Link 2</a>
-    <a href="https://example3.com" title="Description for Link 3">Link 3</a>
-    <a href="https://example4.com" title="Description for Link 4">Link 3</a>
-    <a href="https://example5.com" title="Description for Link 5">Link 3</a>
-
-    <a href="#section1">Section 1</a>
-    <a href="#section2">Section 2</a>
-    <a href="#section3">Section 3</a>
-
-    <section id="section1">
+    <section id="nature">
       <article>
         <h2>Explore Nature's Beauty</h2>
         <p>
@@ -34,10 +37,11 @@
           Integer eget imperdiet erat, non aliquet dolor. Ut luctus tincidunt dapibus. Quisque eget quam sit amet odio lobortis eleifend. 
           Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam tempus ultrices ex, in volutpat enim hendrerit non.
         </p>
+        <img src="./images/nature.jpg" alt="nature">
       </article>
     </section>
   
-    <section id="section2">
+    <section id="food">
       <article>
         <h2>Culinary Delights</h2>
         <p>
@@ -48,10 +52,11 @@
           Cras interdum ante eu semper ultricies. Sed rhoncus lorem sit amet ligula sodales, nec laoreet massa congue. Nam eu feugiat massa. 
           Proin nec commodo ipsum, et auctor risus. In finibus lacus a purus aliquet rhoncus.
         </p>
+        <img src="./images/burger.webp" alt="burger">
       </article>
     </section>
   
-    <section id="section3">
+    <section id="sports">
       <article>
         <h2>Travel Tips & Adventures</h2>
         <p>
@@ -61,6 +66,7 @@
           Pellentesque euismod ullamcorper odio, nec dignissim sapien volutpat at. Curabitur accumsan efficitur porttitor. Donec eu erat ac mi faucibus eleifend in vel erat. 
           Sed sagittis sapien felis, eget molestie diam sagittis non.
         </p>
+        <img src="./images/biking.jpg" alt="mountain biking">
       </article>
     </section>
   </main>
