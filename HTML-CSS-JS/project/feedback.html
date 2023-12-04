@@ -1,4 +1,3 @@
-<!-- Similar structure as index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,9 +20,30 @@
       <li><a href="contact.html">Contact us</a></li>
     </ul>
   </nav>
-	customer feedback form y unas reviews 
+  <main id="feedback">
+    <section class="feedback-form">
+      <h2>Customer Feedback Form</h2>
+      <form id="feedbackForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="message">Your Feedback:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+  
+        <input type="submit" value="Submit Feedback">
+      </form>
+    </section>
+
+    <section class="reviews">
+      <h2>Customer Reviews</h2>
+      <div id="reviewsContainer">
+        <!-- Default reviews will be added dynamically using JavaScript -->
+      </div> 
+    </section> 
+  </main>
 	<footer>
-		<p>&copy; Emporium Horses</p>
+		<p>&copy; 2023 Emporium Horses. All rights reserved.</p>
 	</footer>
+  <script src="feedback.js"></script>
 </body>
 </html>
