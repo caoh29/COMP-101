@@ -137,6 +137,7 @@ nav ul li a {
 }
 
 .album {
+  text-align: center;
   padding: 10vh 10vw;
   background-color: black;
   color: white;
@@ -161,18 +162,41 @@ nav ul li a {
   font-size: 22px;
 }
 
-#products article {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+#products {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
+
+
+#products article {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+article:nth-child(odd) {
+  color: white;
+  background-color: black;
+}
+
+article:nth-child(even) {
+  background-color: wheat;
+} 
 
 #products article figure {
   margin: 0;
-  height: 200px;
-  width: 200px;
+}
+
+#products article figure img {
   border-radius: 50%;
-  grid-column: 1;
 }
 
 #products article h2, #products article p {
@@ -183,9 +207,98 @@ footer p {
   text-align: center;
 }
 
+#contact {
+  height: 70vh;
+  padding: 20px;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 16px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 200px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  align-self: center;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add these styles for the social media links */
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
+}
+
 @media screen and (min-width: 1024px) {
   .post {
     padding: 15vh 30vw;
+  }
+
+  #products article {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.25fr 1fr;
+    gap: 20px;
+  }
+  
+  #products article figure {
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+  }
+
+  #products article figure img {
+    max-height: 500px;
+  }
+  
+  #products article h2, #products article p {
+    grid-column: 2;
+  }
+
+  #products article p {
+    align-self: flex-start;
   }
 }
 
